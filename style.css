@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+}
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+html, body {font-family: Arial, sans-serif; height: 100%;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #222;}
+
+
+a {color: #03f; }
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee;}
+
+/*-----STICKY FOOTER------*/
+.wrapper {
+    min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page-wrap:after {
+  height: 40px; 
+}
+.footer {
+  background: #F2F2F2;
+}
+/*------END STICKY FOOTER----*/
+
+nav {
+	width: 100%;
+}
+
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    
+}
+
+li {
+	display: inline-block;
+    float: right;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+    margin: 0px 6px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+	font: Arial, sans-serif;
+    font-size: 12px;
+ 
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+main {
+    position: absolute;
+    height: 234px;
+    width: 600px;
+    margin: -117px 0 0 -300px;
+    top: 50%;
+    left: 50%;
+}
+
+.content {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+}
+
+
+.content div {
+     resize: vertical;
+     margin-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search {
+    margin: 0 auto;
+    text-align: center;
+    width: 527px;
+    height: 44px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.search img {
+    float: right;
+    max-width:35px;
+    padding: 5px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin-right: 10px;background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+ 
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 36px;
+}
+
+button:hover {
+    border: 1px solid #dcdcdc;
+    border-color: rgba(0,0,0,0.1);
+
+}
+
+.fbar a {
+    text-decoration: none;
+    color: #777;
+	font: Arial, sans-serif;
+    font-size: 12px;
+    padding: 0px 20px
+}
+
+.fbar a:hover {
+    text-decoration: underline;
+}
+
+#fbar-l {
+    float: left;
+    line-height:40px;
+    margin-left: 20px;
+}
+
+#fbar-r {
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
